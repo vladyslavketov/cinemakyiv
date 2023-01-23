@@ -1,0 +1,23 @@
+{
+  "name": "template-parcel",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "homepage": "https://github.com/vladyslavketov/template-parcel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladyslavketov/template-parcel.git"
+  },
+  "author": "Vladyslav Ketov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladyslavketov/template-parcel/issues"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  }
+}
