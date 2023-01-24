@@ -1,0 +1,32 @@
+.sm__list {
+  display: flex;
+  gap: 12px;
+};
+
+.sm__link {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px;
+  
+  border-radius: var(--border__radius);
+  transition: background-color var(--transition__hover);
+
+  &:hover,
+  &:focus {
+    &.instagram {
+      background-color: #C13584;
+    };
+  
+    &.facebook {
+      background-color: #0165E1;;
+    };
+  };
+};
+
+.sm__icon {
+  width: 24px;
+  height: 24px;
+
+  // fill: currentColor;
+  fill: rgba($color: white, $alpha: 0.1);
+};

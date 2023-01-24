@@ -1,0 +1,23 @@
+%cardSet {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+%cardSet__item {
+  flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items));
+
+  @media screen and (min-width:768px) {
+    --items: 2;
+  };
+
+  @media screen and (min-width:1200px) {
+    --items: 3;
+  };
+};
+
+%flex {
+  display: flex;
+  align-items: center;
+};

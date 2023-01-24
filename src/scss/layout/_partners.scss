@@ -1,0 +1,48 @@
+.partners-slide {
+  padding: 0;
+
+  background-color: var(--color-bg__secondary);
+}
+
+.partners-slide__container,
+.partners-slide__list,
+.partners-slide__item {
+  @extend %flex;
+}
+
+
+
+.partners-slide__container {
+  gap: 16px;
+  max-width: 100%;
+}
+
+.partners-slide__desc {
+  text-align: start;
+}
+
+.partners-slide__inner {
+  width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+
+.partners-slide__img {
+  max-width: 80px;
+  max-height: 60px;
+  object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    max-width: 96px;
+    max-height: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 120px;
+    max-height: 96px;
+  }
+}
+
+.toypictures {
+  background-color: rgb(0, 0, 0);
+}

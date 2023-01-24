@@ -1,0 +1,40 @@
+.header__logo {
+  position: relative;
+  @extend %flex;
+  height: var(--height__header);
+  gap: 4px;
+
+  transform: height var(--transition__main);
+
+  .header.scrolling & {
+    height: 44px;
+  };
+
+  &::before {
+    content: "casting agency";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    
+    font-size: 16px;
+
+    opacity: 1;
+    transform: opacity var(--transition__main);
+
+    .header.scrolling & {
+      opacity: 0;
+    };
+  };
+};
+
+.logo__icon,
+.logo__text {
+  fill: currentColor;
+};
+
+.logo__text {
+  font-weight: 700;
+  font-size: 24px;
+};

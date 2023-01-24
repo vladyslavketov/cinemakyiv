@@ -1,0 +1,158 @@
+.projects__slider {
+  min-width: 0;
+};
+
+.projects__filter-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin: 24px 0;
+};
+
+.projects__filter-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 88px;
+  padding: 12px;
+
+  font-size: 16px;
+  color: rgba(white, 0.6);
+  background-color: rgba(black, 1);
+  border-radius: var(--border__radius);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color__hover);
+  };
+
+  &.current {
+    color: white;
+    background-color: var(--color__accent);
+  };
+
+  @media screen and (min-width: 768px) {
+    min-width: 100px;
+  };
+};
+
+.projects__list {
+  @extend %cardSet;
+
+  // background-color: var(--color__accent);
+};
+
+.projects__item {
+  position: relative;
+  @extend %cardSet__item;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  &.hide {
+    display: none;
+  };
+};
+
+.project__title {
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px;
+
+  color: white;
+
+  border-bottom-left-radius: var(--border__radius);
+  border-bottom-right-radius: var(--border__radius);
+  background-color: black;
+  overflow: hidden;
+  
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  };
+  
+  @media screen and (min-width: 1200px) {
+    padding: 12px;
+    font-size: 18px;
+  };
+};
+
+.project__category {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 8px;
+
+  font-size: 12px;
+  color: white;
+  
+  background-color: rgba($color: black, $alpha: 0.85);
+  border-bottom-left-radius: var(--border__radius);
+  border-top-right-radius: var(--border__radius);
+  overflow: hidden;
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px;
+    font-size: 14px;
+  };
+};
+
+.projects__img-cover {
+  width: 100%;
+  height: calc(50vw);
+  object-fit: cover;
+
+  border-top-left-radius: var(--border__radius);
+  border-top-right-radius: var(--border__radius);
+  cursor: pointer;
+
+  @media screen and (min-width: 480px) {
+    height: 252px;
+  };
+
+  @media screen and (min-width: 768px) {
+    height: 192px;
+  };
+
+  @media screen and (min-width: 1200px) {
+    height: 204px;
+  };
+};
+
+.projects__play-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+
+  color: #FF0000;
+  fill: currentColor;
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+};
+
+.projects__play-iframe {
+  width: 400px;
+  height: 225px;
+
+  @media screen and (min-width: 768px) {
+    width: 720px;
+    height: 405px;
+  };
+
+  @media screen and (min-width: 1200px) {
+    width: 960px;
+    height: 840px;
+  };
+};
