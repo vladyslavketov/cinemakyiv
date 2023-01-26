@@ -62,7 +62,7 @@
 
 .mobile-menu {
   position: fixed;
-  top: 60px;
+  top: var(--height__header);
   left: 0;
   bottom: 0;
   right: 0;

@@ -24,7 +24,8 @@ body {
   // };
 };
 
-body.mobile-menu-is-open {
+body.mobile-menu-is-open,
+body.isLoading {
   overflow: hidden;
 };
 
@@ -44,6 +45,10 @@ svg {
 
 .section {
   padding-bottom: 32px;
+
+  &.top {
+    padding-top: calc(var(--height__header) + 32px);
+  }
 };
 
 .container {

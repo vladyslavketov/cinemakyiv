@@ -6,16 +6,15 @@
 
   transform: height var(--transition__main);
 
-  .header.scrolling & {
-    height: 44px;
-  };
+  // .header.scrolling & {
+  //   height: 44px;
+  // };
 
   &::before {
     content: "casting agency";
     position: absolute;
     right: 0;
-    bottom: 0;
-
+    bottom: -10px;
     display: block;
     
     font-size: 16px;

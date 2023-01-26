@@ -26,8 +26,9 @@
 
     &:hover,
     &:focus {
-      border: transparent;
+      border: 1px solid transparent;
       background-color: var(--color__accent);
+      outline: none;
     };
   };
 };

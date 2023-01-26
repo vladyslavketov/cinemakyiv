@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*"],
+      "images/*": ["src/images/*"],
+    }
+  }
+}
+
+// ========================
+// {
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "paths": {
+//       "svg/*": ["src/svg/*"],
+//       "components/*": ["src/components/*"]
+//     }
+//   }
+// }

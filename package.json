@@ -17,8 +17,19 @@
     "url": "https://github.com/vladyslavketov/template-parcel/issues"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
     "@parcel/transformer-sass": "^2.8.3",
+    "babel-plugin-module-resolver": "^5.0.0",
     "parcel": "^2.8.3",
+    "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
+  },
+  "dependencies": {
+    "@parcel/transformer-webmanifest": "^2.8.3",
+    "basiclightbox": "^5.0.4",
+    "handlebars": "^4.7.7",
+    "jquery": "^3.6.3",
+    "parcel-reporter-static-files-copy": "^1.5.0",
+    "slick-carousel": "^1.8.1"
   }
 }
