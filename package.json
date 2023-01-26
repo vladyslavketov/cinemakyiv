@@ -1,20 +1,20 @@
 {
-  "name": "template-parcel",
+  "name": "cinemakyiv",
   "version": "1.0.0",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
   },
-  "homepage": "https://github.com/vladyslavketov/template-parcel",
+  "homepage": "https://github.com/vladyslavketov/cinemakyiv",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vladyslavketov/template-parcel.git"
+    "url": "git+https://github.com/vladyslavketov/cinemakyiv.git"
   },
   "author": "Vladyslav Ketov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vladyslavketov/template-parcel/issues"
+    "url": "https://github.com/vladyslavketov/cinemakyiv/issues"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.8.3",
