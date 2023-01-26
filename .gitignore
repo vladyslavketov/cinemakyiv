@@ -104,5 +104,4 @@ dist
 .tern-port
 
 # Parcel related files
-dist/
 .parcel-cache/
