@@ -1,5 +1,3 @@
-// import refs from '../base/refs';
-
 const refs = {
   projectsFilterList: document.querySelector('.projects__filter-list'),
   projectsFilterBtn: document.querySelectorAll('.projects__filter-btn'),
@@ -36,10 +34,19 @@ function setClassHideToProjectsItem(e) {
   for (const item of refs.projectsItems) {
     if (currentCategory === 'all') {
       item.classList.remove('hide');
+      setTimeout(() => {
+        item.classList.remove('opacity');
+      }, 500)
     } else if (currentCategory !== item.dataset.filter) {
-      item.classList.add('hide');
+      item.classList.add('opacity');
+      setTimeout(() => {
+        item.classList.add('hide');
+      }, 500);
     } else {
       item.classList.remove('hide');
+      setTimeout(() => {
+        item.classList.remove('opacity');
+      }, 500);
     }
   }
 }
