@@ -31,5 +31,6 @@
     "jquery": "^3.6.3",
     "parcel-reporter-static-files-copy": "^1.5.0",
     "slick-carousel": "^1.8.1"
-  }
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }

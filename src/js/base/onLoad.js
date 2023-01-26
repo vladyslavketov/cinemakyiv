@@ -1,7 +1,7 @@
 import refs from './refs';
 
-refs.body.classList.add('isLoading');
-refs.loader.parentElement.classList.add('isShow');
+// refs.body.classList.add('isLoading');
+// refs.loader.parentElement.classList.add('isShow');
 
 window.addEventListener('load', onWindowLoad);
 
