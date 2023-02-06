@@ -7,7 +7,6 @@ function onWindowScroll() {
   const windowPageYOffset = window.pageYOffset;
 
   if (windowPageYOffset > 40) {
-    // console.log('windowPageYOffset: ', windowPageYOffset);
     refs.header.classList.add('scrolling');
     refs.body.classList.add('scrolling');
 

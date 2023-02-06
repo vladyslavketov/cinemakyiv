@@ -6,7 +6,6 @@ import refs from './refs';
 window.addEventListener('load', onWindowLoad);
 
 function onWindowLoad() {
-  console.log("load")
   refs.body.classList.remove('isLoading');
   refs.loader.parentElement.classList.remove('isShow');
 }
