@@ -1,11 +1,11 @@
 import refs from '../../base/refs';
-import allProjects from '../../../lib/allProjects.JSON';
+import projectsLib from '../../../lib/projectsLib.JSON';
 import projectsItemMarkup from '../../../templates/projectsItemMarkup';
 import projectsItemModalMarkup from '../../../templates/projectsItemModalMarkup';
 import { openModal } from '../modal';
 import { showLoader, hideLoader } from '../loader';
 
-const arrayOfProjects = Object.values(allProjects).flat();
+const arrayOfProjects = Object.values(projectsLib).flat();
 const listMarkup = createListMarkup(arrayOfProjects, projectsItemMarkup);
 
 refs.projectList.insertAdjacentHTML('beforeend', listMarkup);
@@ -31,10 +31,10 @@ function onProjectDetailsBtnClick(e) {
 }
 
 // для фільтрації
-// console.log(allProjects.adv);
-// console.log(Object.values(allProjects).flat());
-// console.log(Object.values(allProjects).flat()[0]);
-// console.log(Object.values(allProjects).flat()[0].title);
+// console.log(projectsLib.adv);
+// console.log(Object.values(projectsLib).flat());
+// console.log(Object.values(projectsLib).flat()[0]);
+// console.log(Object.values(projectsLib).flat()[0].title);
 
 // ===
 // setTimeout(() => {
