@@ -1,12 +1,22 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "*": ["src/*"],
-      "images/*": ["src/images/*"],
-    }
-  }
+    "baseUrl": "src",
+    },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"],
 }
+
+// {
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "paths": {
+//       "@js/*": ["src/js/*"],
+//       "@lib/*": ["lib/*"]
+//     }
+//   },
+//   "include": ["src/**/*.js", "lib/*.JSON"]
+// }
+
 
 // ========================
 // {
