@@ -1,5 +1,5 @@
 import refs from '../../base/refs';
-import Allprojects from '~src/lib/Allprojects.JSON';
+import Allprojects from '~/src/lib/Allprojects.JSON';
 // /Users/vladyslavketov/IT/GitHub/cinemakyiv/src/lib/AllProjects.JSON
 import projectsItemMarkup from '../../../templates/projectsItemMarkup';
 import projectsItemModalMarkup from '../../../templates/projectsItemModalMarkup';
