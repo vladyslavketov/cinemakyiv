@@ -1,18 +1,12 @@
-import refs from '../base/refs';
-import libProjects from '../../lib/libProjects.JSON';
+import refs from '../../base/refs';
+import libProjects from '../../../lib/libProjects.JSON';
 
 const basicLightbox = require('basiclightbox');
 const projectsGalleryMarkup = createlibProjectsMarkup(libProjects);
 
-// === action ===
-// window.addEventListener('load', () => {
-//   refs.projectList.insertAdjacentHTML('beforeend', projectsGalleryMarkup);
-// })
-
 refs.projectList.insertAdjacentHTML('beforeend', projectsGalleryMarkup);
 refs.projectList.addEventListener('click', playProjectVideo);
 
-// === funcion ===
 function createlibProjectsMarkup(libProjects) {
   return libProjects
     .map(({ projectName, category }) => {

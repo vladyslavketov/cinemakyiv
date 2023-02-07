@@ -32,7 +32,6 @@ export default function projectsItemModalMarkup(data) {
           src=${url}
           frameborder="0"
           allowfullscreen
-          
         ></iframe>
       </div>
       <div class="projects__modal-dec">

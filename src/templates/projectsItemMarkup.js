@@ -23,18 +23,6 @@ export default function projectsItemMarkup(data) {
       nameOfCategory = 'Проект';
   }
 
-  // === інший синтаксис ===
-  // if (category === 'films') {
-  //   nameOfCategory = 'Фільм';
-  // } else if (category === 'serials') {
-  //   nameOfCategory = 'Серіал';
-  // } else if (category === 'clips') {
-  //   nameOfCategory = 'Кліп';
-  // } else if (category === 'adv') {
-  //   nameOfCategory = 'Реклама';
-  // } else {nameOfCategory = 'Проект';}
-  // ===  ===
-
   return `
     <li class="projects__item" data-filter=${category}>
         <img
@@ -53,3 +41,16 @@ export default function projectsItemMarkup(data) {
     </li>
   `;
 }
+
+
+// === інший синтаксис ===
+  // if (category === 'films') {
+  //   nameOfCategory = 'Фільм';
+  // } else if (category === 'serials') {
+  //   nameOfCategory = 'Серіал';
+  // } else if (category === 'clips') {
+  //   nameOfCategory = 'Кліп';
+  // } else if (category === 'adv') {
+  //   nameOfCategory = 'Реклама';
+  // } else {nameOfCategory = 'Проект';}
+  // ===  ===

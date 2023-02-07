@@ -1,3 +1,3 @@
 import '../base/base';
-import '../components/render-projects';
-import '../components/projectsFilter';
+import '../components/projects/render-projects';
+import '../components/projects/projectsFilter';
