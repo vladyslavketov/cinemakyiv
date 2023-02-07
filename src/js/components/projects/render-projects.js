@@ -31,10 +31,10 @@ function onProjectDetailsBtnClick(e) {
 }
 
 // для фільтрації
-// console.log(Allprojects.adv);
-// console.log(Object.values(Allprojects).flat());
-// console.log(Object.values(Allprojects).flat()[0]);
-// console.log(Object.values(Allprojects).flat()[0].title);
+// console.log(allProjects.adv);
+// console.log(Object.values(allProjects).flat());
+// console.log(Object.values(allProjects).flat()[0]);
+// console.log(Object.values(allProjects).flat()[0].title);
 
 // ===
 // setTimeout(() => {
