@@ -6,7 +6,7 @@
 
   transform: height var(--transition__main);
 
-  // .header.scrolling & {
+  // .header.isScrolling & {
   //   height: 44px;
   // };
 
@@ -22,7 +22,7 @@
     opacity: 1;
     transform: opacity var(--transition__main);
 
-    .header.scrolling & {
+    .header.isScrolling & {
       opacity: 0;
     };
   };

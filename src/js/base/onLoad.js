@@ -1,11 +1,7 @@
-import refs from './refs';
+import { hideLoader } from '../components/loader';
 
-// refs.body.classList.add('isLoading');
-// refs.loader.parentElement.classList.add('isShow');
+window.addEventListener('load', hideLoader);
 
-window.addEventListener('load', onWindowLoad);
-
-function onWindowLoad() {
-  refs.body.classList.remove('isLoading');
-  refs.loader.parentElement.classList.remove('isShow');
-}
+// === інший синтаксис ===
+// window.onload = hideLoader();
+// ===  ===

@@ -1,0 +1,16 @@
+@import './var';
+@import './reset';
+@import './common';
+
+@import '../utils/placeholders';
+@import '../utils/visually-hidden';
+
+@import '../components/logo';
+@import '../components/btn';
+@import '../components/nav';
+@import '../components/contacts';
+@import '../components/sm';
+
+@import '../components/backdrop';
+@import '../components/loader';
+@import '../components/modal';

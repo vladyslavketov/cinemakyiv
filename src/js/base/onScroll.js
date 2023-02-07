@@ -7,21 +7,20 @@ function onWindowScroll() {
   const windowPageYOffset = window.pageYOffset;
 
   if (windowPageYOffset > 40) {
-    refs.header.classList.add('scrolling');
-    refs.body.classList.add('scrolling');
+    refs.header.classList.add('isScrolling');
+    refs.body.classList.add('isScrolling');
 
     if (windowPageYOffset > 500) {
-      refs.btnUp.classList.remove('is-hide');
+      refs.btnUp.classList.remove('isHidden');
     } else if (windowPageYOffset <= 500) {
-      refs.btnUp.classList.add('is-hide');
-    };
-
+      refs.btnUp.classList.add('isHidden');
+    }
   } else if (windowPageYOffset <= 40) {
-    refs.header.classList.remove('scrolling');
-    refs.body.classList.remove('scrolling');
-  };
-};
+    refs.header.classList.remove('isScrolling');
+    refs.body.classList.remove('isScrolling');
+  }
+}
 
 function onBtnUpClick() {
   window.scrollTo(0, 0);
-};
+}

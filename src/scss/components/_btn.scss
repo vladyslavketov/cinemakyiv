@@ -14,7 +14,7 @@
   background-color: rgba($color: black, $alpha: 0.6);
   border-radius: 50%;
   border: 1px solid rgba($color: white, $alpha: 0.4);
-  
+
   cursor: pointer;
   opacity: 1;
   pointer-events: all;
@@ -22,16 +22,16 @@
   &:hover,
   &:focus {
     background-color: var(--color__accent);
-  };
+  }
 
-  &.is-hide {
+  &.isHidden {
     opacity: 0;
     pointer-events: none;
-  };
-};
+  }
+}
 
 .btn-up__icon {
   width: 36px;
   height: 36px;
   fill: currentColor;
-};
+}

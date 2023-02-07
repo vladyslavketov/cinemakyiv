@@ -24,11 +24,12 @@ body {
   // };
 };
 
-body.mobile-menu-is-open,
-body.isLoading {
+body.isLoading,
+body.modalIsOpen {
   overflow: hidden;
 };
 
+iframe,
 img {
   display: block;
   max-width: 100%;
@@ -52,6 +53,7 @@ svg {
 };
 
 .container {
+  width: 100%;
   padding: 0 16px;
   margin: 0 auto;
 

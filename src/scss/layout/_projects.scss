@@ -167,3 +167,36 @@
     height: 840px;
   };
 };
+
+.project__details-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: transparent;
+}
+
+// .projects__iframe-wrap {
+//   height: 600px;
+// }
+
+
+
+.projects__iframe {
+  width: 100%;
+  min-height: 336px;
+
+  @media screen and (min-width: 480px) {
+    height: 336px;
+  };
+
+  @media screen and (min-width: 768px) {
+    height: 528px
+  };
+
+  @media screen and (min-width: 1200px) {
+    height: 852px;
+  };
+}

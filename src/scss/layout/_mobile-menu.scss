@@ -15,7 +15,7 @@
     justify-content: flex-start;
   };
 
-  .header.scrolling & {
+  .header.isScrolling & {
     height: 40px;
   };
 
@@ -84,7 +84,7 @@
     transform var(--transition__main),
     visibility var(--transition__main);
 
-  body.scrolling & {
+  body.isScrolling & {
     top: 44px;
   }
 
