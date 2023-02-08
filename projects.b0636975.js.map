@@ -1,0 +1,1 @@
+{"mappings":"gfAAAA,EAAA,S","sources":["src/js/pages/projects/projects.js"],"sourcesContent":["import '../../common/base';\nimport '../home/section-projects';\nimport '../../components/projects/projectsFilter';"],"names":["parcelRequire"],"version":3,"file":"projects.b0636975.js.map"}
