@@ -1,4 +1,4 @@
-import refs from '../base/refs';
+import refs from '../common/refs';
 
 refs.menuBtnRef.addEventListener('click', toggleClassIsOpen);
 refs.menuNavListRef.addEventListener('click', checkNodeName);

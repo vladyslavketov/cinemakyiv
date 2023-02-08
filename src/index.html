@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Кастинг-агентство Cinema Kyiv. Кастинг у реклами, кліпи, кіно, серіали. Cinema Kyiv Agancy</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./images/favicon/site.webmanifest">
-  <!-- підключаємо таблицю стилів -->
-  <link rel="stylesheet" href="./scss/pages/home.scss" />
-</head>
-<body class="isLoading">
-  <include src="./html/pages/home/header.html"/></include>
-  <main>
-    <include src="./html/layouts/section-hero.html"></include>
-    <div class="section-wrap" id="projects">
-      <include src="./html/layouts/section-projects-home.html"></include>
-    </div>
-    <include src="./html/layouts/section-benefits.html"></include>
-  </main>
-  <include src="./html/layouts/footer.html"></include>
-  <!-- підключаємо доп компоненти -->
-  <include src="./html/components/loader.html"></include>
-  <include src="./html/components/modal.html"></include>
-  <include src="./html/components/btn-up.html"></include>
-  <include src="./html/components/mobile-menu.html"></include>
-  <!-- підключаємо скрипти для роботи -->
-  <script type="module" src="./js/base/onLoad.js"></script>
-  <script type="module" src="./js/pages/home.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кастинг-агентство Cinema Kyiv. Кастинг у реклами, кліпи, кіно, серіали. Cinema Kyiv Agancy</title>
+    <include src="./html/components/favicon.html"/></include>
+    <!-- підключаємо таблицю стилів -->
+    <link rel="stylesheet" href="./scss/pages/home.scss" />
+  </head>
+  <body class="isLoading">
+    <include src="./pages/home/html/header.html"/></include>
+    <main>
+      <include src="./pages/home/html/section-hero.html"></include>
+      <div class="section-wrap" id="projects">
+        <include src="./pages/home/html/section-projects.html"></include>
+      </div>
+      <include src="./pages/home/html/section-benefits.html"></include>
+    </main>
+    <include src="./html/layouts/footer.html"></include>
+    <!-- підключаємо доп компоненти -->
+    <include src="./html/components/loader.html"></include>
+    <include src="./html/components/modal.html"></include>
+    <include src="./html/components/btn-up.html"></include>
+    <include src="./html/components/mobile-menu.html"></include>
+    <!-- підключаємо скрипти для роботи -->
+    <script type="module" src="./js/pages/home/home.js"></script>
+  </body>
 </html>

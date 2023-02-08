@@ -1,4 +1,4 @@
-import refs from "../base/refs";
+import refs from "../common/refs";
 
 const backdrop = refs.modal.parentElement;
 

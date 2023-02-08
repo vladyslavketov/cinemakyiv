@@ -54,7 +54,6 @@ function setClassHideToProjectsItem(e) {
 function onLoadShowProjectItem() {
   const initialFilterItem = "all";
   let currentFilterItem = initialFilterItem;
-  // console.log(refs.projectsItems);
 
   for (const item of refs.projectsFilterBtn) {
     if (item.classList.contains('current')) {

@@ -1,0 +1,22 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  padding: 16px 0;
+}
+
+.paginationBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  padding: 8px;
+  
+  color: aliceblue;
+
+  background-color: cornflowerblue;
+  border-radius: 4px;
+}

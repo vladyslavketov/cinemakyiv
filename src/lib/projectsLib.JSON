@@ -4,49 +4,61 @@
       "id": "f00001",
       "title": "Захар Беркут",
       "youtubeKeys": ["fDoCoiiNqRc", "6l4ojdgfHhA"],
+      "img": ["poster", "cover"],
       "category": "films",
       "year": "2019",
-      "tag": []
+      "tag": [],
+      "selections": ["hero-slider"]
     },
     {
       "id": "f00002",
       "title": "Ціна правди",
       "youtubeKeys": ["at21Noa_9kE", "VjlSDlqWiFw"],
+      "img": ["poster", "cover"],
       "category": "films",
       "year": "2019",
-      "tag": []
+      "tag": [],
+      "selections": ["hero-slider"]
     },
     {
       "id": "f00003",
       "title": "Віддана",
       "youtubeKeys": ["WZvWQWM-tdE"],
+      "img": ["poster", "cover"],
       "category": "films",
       "year": "2020",
-      "tag": []
+      "tag": [],
+      "selections": []
     },
     {
       "id": "f00004",
       "title": "Чорний Ворон",
       "youtubeKeys": ["aVh1VAqga2g"],
+      "img": ["poster", "cover"],
       "category": "films",
       "year": "2019",
-      "tag": []
+      "tag": [],
+      "selections": ["hero-slider"]
     },
     {
       "id": "f00005",
       "title": "Пульс",
       "youtubeKeys": ["wOig9fG6vlI"],
+      "img": ["poster", "cover"],
       "category": "films",
       "year": "2021",
-      "tag": []
+      "tag": [],
+      "selections": ["hero-slider"]
     },
     {
       "id": "f00006",
       "title": "Незламна",
       "youtubeKeys": ["BKwLVm5RUg0"],
+      "img": ["poster", "cover"],
       "category": "films",
       "year": "2015",
-      "tag": []
+      "tag": [],
+      "selections": ["hero-slider"]
     }
   ],
   "serials": [
@@ -54,49 +66,71 @@
       "id": "s00001",
       "title": "Чорнобиль (HBO)",
       "youtubeKeys": ["s9APLXM9Ei8"],
+      "img": ["poster", "cover"],
       "category": "serials",
       "year": "2019",
-      "tag": []
+      "tag": [],
+      "selections": ["hero-slider"]
     },
     {
       "id": "s00002",
       "title": "Кріпосна",
       "youtubeKeys": ["OOx-FbkKFgU"],
+      "img": ["poster", "cover"],
       "category": "serials",
       "year": "2019",
-      "tag": []
+      "tag": [],
+      "selections": ["hero-slider"]
     },
     {
       "id": "s00003",
       "title": "Слов'яни",
       "youtubeKeys": ["1ww3CaRR--A"],
+      "img": ["poster", "cover"],
       "category": "serials",
       "year": "2021",
-      "tag": []
+      "tag": [],
+      "selections": ["hero-slider"]
     },
     {
       "id": "s00004",
       "title": "Козаки. Абсолютно брехлива історія",
       "youtubeKeys": ["0ReVqVGGT-4"],
+      "img": ["poster", "cover"],
       "category": "serials",
       "year": "2020",
-      "tag": []
+      "tag": [],
+      "selections": ["hero-slider"]
     },
     {
       "id": "s00005",
       "title": "Нюхач 4",
       "youtubeKeys": ["WDduvLu3j2E"],
+      "img": ["poster", "cover"],
       "category": "serials",
       "year": "2019",
-      "tag": []
+      "tag": [],
+      "selections": ["hero-slider"]
     },
     {
       "id": "s00006",
       "title": "Le Bureau des Légendes (Франція)",
       "youtubeKeys": ["Ky3U8S8GNAM"],
+      "img": ["poster", "cover"],
       "category": "serials",
       "year": "2020",
-      "tag": []
+      "tag": [],
+      "selections": ["hero-slider"]
+    },
+    {
+      "id": "s00007",
+      "title": "Віддана",
+      "youtubeKeys": [""],
+      "img": ["poster", "cover"],
+      "category": "serials",
+      "year": "",
+      "tag": [],
+      "selections": ["hero-slider"]
     }
   ],
   "clips": [
@@ -104,49 +138,61 @@
       "id": "c00001",
       "title": "Paolo Nutini - Iron Sky",
       "youtubeKeys": ["WoCSeIY0xdo"],
+      "img": ["poster", "cover"],
       "category": "clips",
       "year": "2014",
-      "tag": []
+      "tag": [],
+      "selections": []
     },
     {
       "id": "c00002",
       "title": "twenty one pilots - Nico And The Niners",
       "youtubeKeys": ["hMAPyGoqQVw"],
+      "img": ["poster", "cover"],
       "category": "clips",
       "year": "2018",
-      "tag": []
+      "tag": [],
+      "selections": []
     },
     {
       "id": "c00003",
       "title": "MØ - Kamikaze",
       "youtubeKeys": ["eVD9j36Ke94"],
+      "img": ["poster", "cover"],
       "category": "clips",
       "year": "2015",
-      "tag": []
+      "tag": [],
+      "selections": []
     },
     {
       "id": "c00004",
       "title": "DANTES - ГРУСТНЫЕ ТАНЦЫ",
       "youtubeKeys": ["vwAg1gLJikI"],
+      "img": ["poster", "cover"],
       "category": "clips",
       "year": "2021",
-      "tag": []
+      "tag": [],
+      "selections": []
     },
     {
       "id": "c00005",
       "title": "Океан Ельзи - Не твоя війна",
       "youtubeKeys": ["eOtEC4wCA40"],
+      "img": ["poster", "cover"],
       "category": "clips",
       "year": "2015",
-      "tag": []
+      "tag": [],
+      "selections": []
     },
     {
       "id": "c00006",
       "title": "DJ Shadow - Rocket Fuel ft. De La Soul",
       "youtubeKeys": ["8XK7nzAW_b0"],
+      "img": ["poster", "cover"],
       "category": "clips",
       "year": "2019",
-      "tag": []
+      "tag": [],
+      "selections": []
     }
   ],
   "adv": [
@@ -154,49 +200,61 @@
       "id": "a00001",
       "title": "Samsung 'The Marketplace'",
       "youtubeKeys": ["XB1LYchC8uY"],
+      "img": ["poster", "cover"],
       "category": "adv",
       "year": "aaaaa",
-      "tag": []
+      "tag": [],
+      "selections": []
     },
     {
       "id": "a00002",
       "title": "Ladbrokes 'Balloon'",
       "youtubeKeys": ["-qBCO9c6mSM"],
+      "img": ["poster", "cover"],
       "category": "adv",
       "year": "aaaaa",
-      "tag": []
+      "tag": [],
+      "selections": []
     },
     {
       "id": "a00003",
       "title": "Formula E 'No Turning Back'",
       "youtubeKeys": ["TgDmx2Sh5fk"],
+      "img": ["poster", "cover"],
       "category": "adv",
       "year": "aaaaa",
-      "tag": []
+      "tag": [],
+      "selections": []
     },
     {
       "id": "a00004",
       "title": "OnePlus 'Nord 2 5G'",
       "youtubeKeys": ["xigsoT3SW30"],
+      "img": ["poster", "cover"],
       "category": "adv",
       "year": "aaaaa",
-      "tag": []
+      "tag": [],
+      "selections": []
     },
     {
       "id": "a00005",
       "title": "Samsung Galaxy Book 'Welcome to the Museum of Laptops'",
       "youtubeKeys": ["aasCzlwQJe3JYaaa"],
+      "img": ["poster", "cover"],
       "category": "adv",
       "year": "aaaaa",
-      "tag": []
+      "tag": [],
+      "selections": []
     },
     {
       "id": "a00006",
       "title": "Instacart 'Your Mom's Short Ribs'",
       "youtubeKeys": ["6-HSVExLyy8"],
+      "img": ["poster", "cover"],
       "category": "adv",
       "year": "aaaaa",
-      "tag": []
+      "tag": [],
+      "selections": []
     }
   ]
 }

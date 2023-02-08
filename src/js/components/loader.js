@@ -1,4 +1,4 @@
-import refs from '../base/refs';
+import refs from '../common/refs';
 
 export function showLoader() {
   refs.body.classList.add('isLoading');
