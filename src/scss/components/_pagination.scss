@@ -9,14 +9,8 @@
 }
 
 .paginationBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
+  @extend .projects__filter-btn;
+  min-width: 40px;
+  // width: 40px;
   padding: 8px;
-  
-  color: aliceblue;
-
-  background-color: cornflowerblue;
-  border-radius: 4px;
 }

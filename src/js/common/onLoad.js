@@ -1,9 +1,10 @@
 import { hideLoader } from '../components/loader';
 
 window.addEventListener('load', (() => {
+  // window.scrollTo(0, 0);
   hideLoader();
-  window.scrollTo(0, 0);
 }));
+
 
 
 // === інший синтаксис ===
