@@ -10,6 +10,7 @@ const refs = {
   menuBtnRef: document.querySelector('[data-mobile-menu-btn]'),
   menuContainerRef: document.querySelector('[data-mobile-menu]'),
   menuNavListRef: document.querySelector('.mobile-menu .nav__list'),
+  modalCloseBtn: document.querySelector('.backdrop .modal__close-btn'),
 };
 export default refs;
 

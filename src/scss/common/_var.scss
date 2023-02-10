@@ -1,8 +1,8 @@
 :root {
   // fonts
   --font-f__main: 'Nunito', sans-serif;
-  --font-f__h: 'Source Serif Pro', serif;
-  --font-f__quote: 'Caveat', cursive;
+  // --font-f__h: 'Source Serif Pro', serif;
+  // --font-f__quote: 'Caveat', cursive;
   --font-s__main: 24px;
 
   // colors
@@ -40,6 +40,10 @@
   // transition
   --transition__main: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition__hover: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // animation
+  // --animate-duration: 1000ms;
+  // --animate-delay: 1s;
 }
 
 ;

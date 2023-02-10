@@ -8,22 +8,22 @@ function toggleClassIsOpen() {
   const expanded =
     refs.menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
 
-  refs.menuBtnRef.classList.toggle('is-open');
+  refs.menuBtnRef.classList.toggle('isOpen');
   refs.menuBtnRef.setAttribute('aria-expanded', !expanded);
 
-  refs.menuContainerRef.classList.toggle('is-open');
-  document.body.classList.toggle('mobile-menu-is-open');
+  refs.menuContainerRef.classList.toggle('isOpen');
+  document.body.classList.toggle('mobileMenuIsOpen');
 }
 
 function removeClassIsOpen() {
   const expanded =
     refs.menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
 
-  refs.menuBtnRef.classList.remove('is-open');
+  refs.menuBtnRef.classList.remove('isOpen');
   refs.menuBtnRef.setAttribute('aria-expanded', !expanded);
 
-  refs.menuContainerRef.classList.remove('is-open');
-  document.body.classList.remove('mobile-menu-is-open');
+  refs.menuContainerRef.classList.remove('isOpen');
+  document.body.classList.remove('mobileMenuIsOpen');
 }
 
 function checkNodeName(e) {

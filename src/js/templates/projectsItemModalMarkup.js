@@ -36,8 +36,9 @@ export default function projectsItemModalMarkup(data) {
       </div>
       <div class="projects__modal-dec">
         <p class="project__title">${title}</p>
-        <p class="project__category">${nameOfCategory}</p>
       </div>
     </div>
   `;
 }
+
+{/* <p class="project__category">${nameOfCategory}</p> */}

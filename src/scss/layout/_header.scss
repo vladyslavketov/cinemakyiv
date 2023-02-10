@@ -7,18 +7,19 @@
   height: var(--height__header);
 
   color: white;
-  transition: background-color var(--transition__main), min-height var(--transition__main);
+  transition: background-color var(--transition__main),
+    min-height var(--transition__main);
   z-index: 2000;
 
-  body.mobile-menu-is-open &,
+  body.mobileMenuIsOpen &,
   &.isScrolling {
     background-color: rgba($color: #000000, $alpha: 0.9);
   }
-};
+}
 
 .header .container {
   @extend %flex;
 
   // gap: 24px;
   // justify-content: space-between;
-};
+}

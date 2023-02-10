@@ -25,18 +25,20 @@ export default function projectsItemMarkup(data) {
   }
 
   return `
-    <li class="projects__item" data-filter=${category}>
+    <li class="projects__item animate__animated animate__fadeInUp" data-filter=${category}>
         <img
-          class="projects__img-cover js-coverPlay"
+          class="projects__img-cover"
           src="./images/projects/${category}/${id}/cover-${id}.webp"
           alt=${title}
           width="320"
           height="280"
         />
-        <svg class="projects__play-svg" width="60" height="60">
-          <use href="./images/icons/icons.svg#youtube-2"></use>
-        </svg>
-        <p class="project__title">${title}</p>
+        <div class="project__desc">
+          <p class="project__title">${title}</p>
+          <svg class="projects__play-svg" width="40" height="40">
+            <use href="./images/icons/icons.svg#youtube-2"></use>
+          </svg>
+        </div>
         <p class="project__category">${nameOfCategory}</p>
         <button type="button" class="project__details-btn" data-id=${id}></button>
     </li>
