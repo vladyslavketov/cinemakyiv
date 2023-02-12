@@ -1,18 +1,14 @@
 import { projectsRefs } from '../../common/refs';
-import projectsLib from '../../../lib/projectsLib.JSON';
+import { sortedAllProjectByPriority } from '../../components/projects';
 
 import projectsItemSliderMarkup from '../../templates/projectsItemSliderMarkup';
 import createListMarkup from '../../common/createListMarkup';
 
-const allProjects = Object.values(projectsLib).flat();
-const filterProjects = allProjects.filter(item => {
+const filterProjects = sortedAllProjectByPriority.filter(item => {
   if (item.selections.find(i => i === 'hero-slider')) return true;
 });
 
-const sliderlistMarkup = createListMarkup(
-  filterProjects,
-  projectsItemSliderMarkup
-);
+const sliderlistMarkup = createListMarkup(filterProjects,projectsItemSliderMarkup);
 projectsRefs.projectSliderList.insertAdjacentHTML('beforeend', sliderlistMarkup);
 // projectsRefs.projectSliderList.innerHTML = sliderlistMarkup;
 

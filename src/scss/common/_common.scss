@@ -14,62 +14,66 @@ body {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--color__main);
-};
+}
 
 body.isLoading,
 body.modalIsOpen,
 body.mobileMenuIsOpen {
   overflow: hidden;
-};
+}
 
 iframe,
 img {
   display: block;
   max-width: 100%;
   height: auto;
-};
+}
+
+button[disabled] {
+  cursor: auto;
+}
 
 svg {
   display: block;
-};
+}
 
 .section-wrap {
-  padding-top: calc(var(--height__header) + 12px);
-};
+  padding-top: calc($height-header + 12px);
+}
 
 .section {
   padding-bottom: 32px;
 
   &.top {
-    padding-top: calc(var(--height__header) + 32px);
+    padding-top: calc($height-header + 32px);
   }
-};
+}
 
 .container {
   width: 100%;
-  padding: 0 16px;
+  padding: 0 $padding-small;
   margin: 0 auto;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  };
+  @include breakpoint-min($small) {
+    width: $small;
+  }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding: 0 32px;
-  };
+  @include breakpoint-min($medium) {
+    width: $medium;
+    padding: 0 $padding-medium;
+  }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  };
-};
+  @include breakpoint-min($large) {
+    width: $large;
+  }
+}
 
 .title {
   font-size: 28px;
   text-align: center;
   line-height: 1;
-};
+}
 
 .subtitle {
   font-size: 20px;
-};
+}

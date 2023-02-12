@@ -1,17 +1,22 @@
-.modal .container {
+.modal.container {
   position: relative;
 }
 
 .modal__close-btn {
-  position: absolute;
-  top: 20;
-  right: 20;
-  @extend %flex;
+  @extend %absolute;
+  top: 4px;
+  right: $padding-small;
+  @extend %flex-center-a;
   justify-content: center;
   width: 32px;
   height: 32px;
 
   background-color: transparent;
+  @extend %cursor;
+
+  @include breakpoint-min-max($medium, ($medium + $padding-medium)) {
+    right: $padding-medium;
+  }
 }
 
 .modal__close-btn .burger-line {
@@ -20,10 +25,10 @@
   margin: 0;
 
   background-color: white;
-  border-radius: 2px;
+  @extend %border-radius;
 
   &:first-child {
-    position: absolute;
+    @extend %absolute;
     transform: rotate(-45deg);
     transform: translateY(8px);
   }

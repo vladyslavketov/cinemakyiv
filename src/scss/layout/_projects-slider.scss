@@ -1,28 +1,26 @@
 .slick-slider {
   max-width: 100%;
   min-width: 0px;
-};
+}
 
 .slick-slider.projects-slider {
   position: relative;
-};
+}
 
 .slick-list {
   overflow: hidden;
   max-width: 100%;
-};
+}
 
 .slick-track {
   display: flex;
-};
+}
 
 // dots - точки
 .slick-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center-ja;
   gap: 4px;
-};
+}
 
 .slick-dots button {
   width: 10px;
@@ -32,18 +30,18 @@
 
   background-color: #fff;
   border-radius: 50%;
-};
+}
 
 .slick-dots li.slick-active button {
   background-color: transparent;
   border: 1px solid #fff;
-};
+}
 
 //  стрілки
 .slick-arrow {
-  position: absolute;
+  @extend %absolute;
   top: 88%;
-  
+
   font-size: 0px;
   color: #fff;
   background-color: transparent;
@@ -51,31 +49,29 @@
   &.slick-prev {
     transform: rotate(-90deg);
     left: 0;
-  };
+  }
 
   &.slick-next {
     transform: rotate(90deg);
     right: 0;
-  };
-};
+  }
+}
 
 .slick-arrow__icon {
   fill: currentColor;
-};
-
-
+}
 
 .projects-slider__item {
   display: flex;
   justify-content: center;
-};
-
-.projects-slider__item span {
-  display: none;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .projects-slider__img {
-  border-radius: var(--border__radius);
+  width: 100%;
 
+  aspect-ratio: 2/3;
   object-fit: cover;
-};
+  @extend %border-radius;
+}

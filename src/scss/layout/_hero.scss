@@ -1,88 +1,81 @@
 .hero.section {
-  min-height: 200px;
-  margin: 0 auto;
-  // padding-top: calc(var(--height__header) + 32px);
-
-  // background-image: linear-gradient(rgba(33, 33, 33, 0.7), rgba(33, 33, 33, 0.7)), url(../../images/hero/hlop__1600.jpg);
-  background-image: linear-gradient(rgba(33, 33, 33, 0.7), rgba(33, 33, 33, 0.7)), url(../../../static/images/hero/hlop__1600.jpg);
+  background-image: linear-gradient(
+      rgba(33, 33, 33, 0.7),
+      rgba(33, 33, 33, 0.7)
+    ),
+    url(../../../static/images/hero/bg-img-hero.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 
-  @media screen and (min-width: 1200px) and (min-height: 760px) {
-    width: 100vw;
-    height: 100vh;
-  };
-};
+  @include breakpoint-min($medium) {width: 100vw; height: 100vh;}
+}
 
 .hero__container {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: $padding-medium;
 
-  @media screen and (max-width: 767px) {
+  @include breakpoint-max($smallMax) {
     flex-direction: column;
-    gap: 8px;
-  };
-};
+    gap: $padding-small;
+  }
+}
 
 .hero__box {
-  @media screen and (min-width: 768px) {
-    min-width: 400px;
+  @include breakpoint-min-max($medium, $mediumMax) {
+    width: calc(($medium - 3 * $padding-medium) / 2);
+  }
 
-    &.hide-tablet {
-      display: none;
-    };
-  };
+  @include breakpoint-min($large) {
+    // width: calc(($large - 3 * $padding-medium) / 3 * 2 + 40px);
+    width: calc(($large - 3 * $padding-medium) / 2 + 50px);
+  }
+}
 
-  @media screen and (min-width: 1200px) {
-    min-width: 480px;
-  };
+.hero__box.slider {
+  max-width: 100%;
+  min-width: 0;
 
-  &.slider {
-    max-width: 100%;
-    min-width: 0;
+  @include breakpoint-min($large) {
+    // width: calc(($large - 3 * $padding-medium) / 3 - 40px);
+    width: calc(($large - 3 * $padding-medium) / 3);
+  }
 
-    @media screen and (min-width: 768px) {
-      width: 540px;
-    };
-  };
-};
+  // &.animate__animated.animate__fadeIn {
+  // --animate-duration: 2s;
+  // --animate-delay: 2s;
+  // --animate-repeat: 3;
+  // }
+}
 
 .hero__title,
 .hero__subtitle,
 .hero__desc {
   color: var(--color__w);
   text-align: center;
-};
+}
 
 .hero__title {
   margin-bottom: 8px;
 
   font-weight: 700;
   font-size: 32px;
-  
-  @media screen and (min-width: 768px) {
-    margin-bottom: 24px;
-  };
 
-  @media screen and (min-width: 1200px) {
-    font-size: 48px;
-  };
-};
+  @include breakpoint-min($medium) {margin-bottom: 24px;}
+  @include breakpoint-min($large) {font-size: 48px;}
+}
 
 .hero__subtitle {
   font-size: 24px;
 
-  @media screen and (min-width: 1200px) {
-    font-size: 32px;
-  };
-};
+  @include breakpoint-min($large) {font-size: 32px;}
+}
 
 .hero__desc {
   max-width: 604px;
-  
+
   &:not(:last-child) {
     margin-top: 16px;
   }
@@ -91,28 +84,20 @@
   font-size: 16px;
   line-height: 1.5;
 
-  @media screen and (max-width: 767px) {
-    &.hide-mobile {
-      display: none;
-    };
-  };
-
-  @media screen and (min-width: 1200px) {
+  @include breakpoint-min($large) {
     max-width: 880px;
 
     font-size: 20px;
-  };
+  }
 
-  @media screen and (min-width: 1600px) {
-    font-size: 24px;
-  };
-};
+  @include breakpoint-min(1600px) {font-size: 24px;}
+}
 
 .hero__desc .accent {
   padding: 0 8px;
 
   color: black;
 
-  border-radius: var(--border__radius);
-  background-color: rgba($color: white, $alpha: 1.0);
-};
+  @extend %border-radius;
+  background-color: rgba($color: white, $alpha: 1);
+}

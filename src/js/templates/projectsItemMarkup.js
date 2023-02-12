@@ -1,6 +1,8 @@
 export default function projectsItemMarkup(data) {
   if (!data) return;
   const { id, title, category } = data;
+  // const src = `./images/projects/${category}/${id}/cover-${id}.webp`;
+
   let nameOfCategory = 0;
 
   switch (category) {
@@ -28,7 +30,8 @@ export default function projectsItemMarkup(data) {
     <li class="projects__item animate__animated animate__fadeInUp" data-filter=${category}>
         <img
           class="projects__img-cover"
-          src="./images/projects/${category}/${id}/cover-${id}.webp"
+          src="./images/projects/${category}/${id}/cover-${id}.webp",
+          
           alt=${title}
           width="320"
           height="280"
@@ -44,6 +47,8 @@ export default function projectsItemMarkup(data) {
     </li>
   `;
 }
+
+// onerror="this.src='images/blankPic.jpg'"
 
 // src = './images/projects/${category}/${id}/cover.webp';
 // data-lazy="./images/projects/${category}/${id}/cover.webp"

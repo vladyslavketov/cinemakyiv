@@ -8,7 +8,9 @@
       "category": "films",
       "year": "2019",
       "tag": [],
-      "selections": ["hero-slider"]
+      "priority": 10,
+      "selections": ["hero-slider"],
+      "newKey": null
     },
     {
       "id": "f00002",
@@ -18,7 +20,9 @@
       "category": "films",
       "year": "2019",
       "tag": [],
-      "selections": ["hero-slider"]
+      "priority": 10,
+      "selections": ["hero-slider"],
+      "newKey": null
     },
     {
       "id": "f00003",
@@ -28,7 +32,9 @@
       "category": "films",
       "year": "2020",
       "tag": [],
-      "selections": []
+      "priority": 0,
+      "selections": [],
+      "newKey": null
     },
     {
       "id": "f00004",
@@ -38,7 +44,9 @@
       "category": "films",
       "year": "2019",
       "tag": [],
-      "selections": ["hero-slider"]
+      "priority": 0,
+      "selections": ["hero-slider"],
+      "newKey": null
     },
     {
       "id": "f00005",
@@ -48,7 +56,9 @@
       "category": "films",
       "year": "2021",
       "tag": [],
-      "selections": ["hero-slider"]
+      "priority": 0,
+      "selections": ["hero-slider"],
+      "newKey": null
     },
     {
       "id": "f00006",
@@ -58,7 +68,21 @@
       "category": "films",
       "year": "2015",
       "tag": [],
-      "selections": ["hero-slider"]
+      "priority": 0,
+      "selections": ["hero-slider"],
+      "newKey": null
+    },
+    {
+      "id": "f00007",
+      "title": "Мирний 21",
+      "youtubeKeys": ["KT2F_z7GgcE"],
+      "img": ["poster", "cover"],
+      "category": "films",
+      "year": "2023",
+      "tag": [],
+      "priority": 11,
+      "selections": ["hero-slider"],
+      "newKey": null
     }
   ],
   "serials": [
@@ -70,7 +94,9 @@
       "category": "serials",
       "year": "2019",
       "tag": [],
-      "selections": ["hero-slider"]
+      "priority": 10,
+      "selections": ["hero-slider"],
+      "newKey": null
     },
     {
       "id": "s00002",
@@ -80,7 +106,9 @@
       "category": "serials",
       "year": "2019",
       "tag": [],
-      "selections": ["hero-slider"]
+      "priority": 0,
+      "selections": ["hero-slider"],
+      "newKey": null
     },
     {
       "id": "s00003",
@@ -90,7 +118,9 @@
       "category": "serials",
       "year": "2021",
       "tag": [],
-      "selections": ["hero-slider"]
+      "priority": 0,
+      "selections": ["hero-slider"],
+      "newKey": null
     },
     {
       "id": "s00004",
@@ -100,7 +130,9 @@
       "category": "serials",
       "year": "2020",
       "tag": [],
-      "selections": ["hero-slider"]
+      "priority": 0,
+      "selections": ["hero-slider"],
+      "newKey": null
     },
     {
       "id": "s00005",
@@ -110,7 +142,9 @@
       "category": "serials",
       "year": "2019",
       "tag": [],
-      "selections": ["hero-slider"]
+      "priority": 10,
+      "selections": ["hero-slider"],
+      "newKey": null
     },
     {
       "id": "s00006",
@@ -120,7 +154,9 @@
       "category": "serials",
       "year": "2020",
       "tag": [],
-      "selections": ["hero-slider"]
+      "priority": 0,
+      "selections": ["hero-slider"],
+      "newKey": null
     },
     {
       "id": "s00007",
@@ -130,7 +166,9 @@
       "category": "serials",
       "year": "",
       "tag": [],
-      "selections": ["hero-slider"]
+      "priority": 0,
+      "selections": ["hero-slider"],
+      "newKey": null
     }
   ],
   "clips": [
@@ -142,7 +180,9 @@
       "category": "clips",
       "year": "2014",
       "tag": [],
-      "selections": []
+      "priority": 0,
+      "selections": [],
+      "newKey": null
     },
     {
       "id": "c00002",
@@ -152,7 +192,9 @@
       "category": "clips",
       "year": "2018",
       "tag": [],
-      "selections": []
+      "priority": 0,
+      "selections": [],
+      "newKey": null
     },
     {
       "id": "c00003",
@@ -162,7 +204,9 @@
       "category": "clips",
       "year": "2015",
       "tag": [],
-      "selections": []
+      "priority": 0,
+      "selections": [],
+      "newKey": null
     },
     {
       "id": "c00004",
@@ -172,7 +216,9 @@
       "category": "clips",
       "year": "2021",
       "tag": [],
-      "selections": []
+      "priority": 0,
+      "selections": [],
+      "newKey": null
     },
     {
       "id": "c00005",
@@ -182,7 +228,9 @@
       "category": "clips",
       "year": "2015",
       "tag": [],
-      "selections": []
+      "priority": 0,
+      "selections": [],
+      "newKey": null
     },
     {
       "id": "c00006",
@@ -192,7 +240,9 @@
       "category": "clips",
       "year": "2019",
       "tag": [],
-      "selections": []
+      "priority": 0,
+      "selections": [],
+      "newKey": null
     }
   ],
   "adv": [
@@ -204,7 +254,9 @@
       "category": "adv",
       "year": "aaaaa",
       "tag": [],
-      "selections": []
+      "priority": 0,
+      "selections": [],
+      "newKey": null
     },
     {
       "id": "a00002",
@@ -214,7 +266,9 @@
       "category": "adv",
       "year": "aaaaa",
       "tag": [],
-      "selections": []
+      "priority": 0,
+      "selections": [],
+      "newKey": null
     },
     {
       "id": "a00003",
@@ -224,7 +278,9 @@
       "category": "adv",
       "year": "aaaaa",
       "tag": [],
-      "selections": []
+      "priority": 0,
+      "selections": [],
+      "newKey": null
     },
     {
       "id": "a00004",
@@ -234,7 +290,9 @@
       "category": "adv",
       "year": "aaaaa",
       "tag": [],
-      "selections": []
+      "priority": 0,
+      "selections": [],
+      "newKey": null
     },
     {
       "id": "a00005",
@@ -244,7 +302,9 @@
       "category": "adv",
       "year": "aaaaa",
       "tag": [],
-      "selections": []
+      "priority": 0,
+      "selections": [],
+      "newKey": null
     },
     {
       "id": "a00006",
@@ -254,7 +314,9 @@
       "category": "adv",
       "year": "aaaaa",
       "tag": [],
-      "selections": []
+      "priority": 0,
+      "selections": [],
+      "newKey": null
     }
   ]
 }

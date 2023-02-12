@@ -1,11 +1,11 @@
 :root {
-  // fonts
+  // === fonts ===
   --font-f__main: 'Nunito', sans-serif;
   // --font-f__h: 'Source Serif Pro', serif;
   // --font-f__quote: 'Caveat', cursive;
   --font-s__main: 24px;
 
-  // colors
+  // === colors ===
   --color__main: #1d2a3b;
   --color__secondary: #495c77;
   --color__w: #fff;
@@ -13,45 +13,42 @@
   --color__hover: rgba(104, 74, 184, 0.75);
   // --color__hover2: rgba(104, 74, 184, 1);
 
-  // colors bg
+  // === colors bg ===
   --color-bg__main: #f0faff;
   --color-bg__header: rgb(0, 0, 0, 0.7);
-  // --color-bg__secondary: ;
 
-  // // screen sizes
-  // --large: 
-  // --middle:
-  // --small:
-
-
-  // shadow
+  // === shadow ===
   --shadow__main: 0 0 4px rgb(0 0 0 / 20%);
-  // 0px 5px 20px rgb(0 0 0 / 20%)
 
   // card set
   --items: 1;
   --gap: 24px;
   --width: 100%;
 
-  // sizes
-  --height__header: 44px;
-  --border__radius: 4px;
-
   // transition
   --transition__main: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition__hover: 400ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  // animation
-  // --animate-duration: 1000ms;
-  // --animate-delay: 1s;
 }
 
-;
+// === screen sizes ===
+$small: 480px;
+$medium: 768px;
+$large: 1200px;
+
+$extraSmallMax: $small - 1;
+$smallMax: $medium - 1;
+$mediumMax: $large - 1;
+
+// === sizes ===
+$height-header: 44px;
+$padding-small: 16px;
+$padding-medium: calc($padding-small * 2);
+$border-radius: 4px;
 
 // #b3a4ff
 // burlywood
 // #684ab8
-// #64afd7 
+// #64afd7
 // rgb(108, 143, 189)
 // rgb(109, 128, 220)
 // rgb(213, 227, 255)

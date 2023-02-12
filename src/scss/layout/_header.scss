@@ -4,7 +4,7 @@
   left: 0;
 
   width: 100%;
-  height: var(--height__header);
+  height: $height-header;
 
   color: white;
   transition: background-color var(--transition__main),
@@ -18,7 +18,7 @@
 }
 
 .header .container {
-  @extend %flex;
+  @extend %flex-center-a;
 
   // gap: 24px;
   // justify-content: space-between;

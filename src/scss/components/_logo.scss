@@ -1,7 +1,7 @@
 .header__logo {
   position: relative;
-  @extend %flex;
-  height: var(--height__header);
+  @extend %flex-center-a;
+  height: $height-header;
   gap: 4px;
 
   transform: height var(--transition__main);
@@ -11,12 +11,12 @@
   // };
 
   &::before {
-    content: "casting agency";
-    position: absolute;
+    content: 'casting agency';
+    @extend %absolute;
     right: 0;
     bottom: -10px;
     display: block;
-    
+
     font-size: 16px;
 
     opacity: 1;
@@ -24,16 +24,16 @@
 
     .header.isScrolling & {
       opacity: 0;
-    };
-  };
-};
+    }
+  }
+}
 
 .logo__icon,
 .logo__text {
   fill: currentColor;
-};
+}
 
 .logo__text {
   font-weight: 700;
   font-size: 24px;
-};
+}

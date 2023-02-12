@@ -7,17 +7,32 @@
 
 %cardSet__item {
   flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items));
-
-  @media screen and (min-width:768px) {
+  @include breakpoint-min($medium) {
     --items: 2;
-  };
-
-  @media screen and (min-width:1200px) {
+  }
+  @include breakpoint-min($large) {
     --items: 3;
-  };
-};
+  }
+}
 
-%flex {
+%flex-center-a {
   display: flex;
   align-items: center;
-};
+}
+
+%flex-center-ja {
+  @extend %flex-center-a;
+  justify-content: center;
+}
+
+%cursor {
+  cursor: pointer;
+}
+
+%border-radius {
+  border-radius: $border-radius;
+}
+
+%absolute {
+  position: absolute;
+}

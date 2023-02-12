@@ -1,3 +1,4 @@
+import '../../components/projects';
 import './projects-slider';
 import './section-projects';
 

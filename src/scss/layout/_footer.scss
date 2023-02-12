@@ -15,23 +15,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  // @media screen and (min-width: 1200px) {
-  //   flex-direction: row;
-  //   align-items: baseline;
-  //   gap: 24px;
-  // };
 };
 
 .footer__logo-wrap {
-  display: flex;
-  align-items: center;
+  @extend %flex-center-a;
   justify-content: space-between;
-
-  // @media screen and (min-width: 1200px) {
-  //   // flex-direction: column;
-  //   // align-items: flex-end;
-  // };
 };
 
 .footer-box__title {
@@ -43,23 +31,21 @@
 };
 
 .footer__bottom {
-  display: flex;
-  align-items: center;
+  @extend %flex-center-a;
   justify-content: space-between;
   gap: 4px;
   padding: 12px;
 
   border-top: 1px solid rgba($color: #fff, $alpha: 0.3);
 
-  @media screen and (max-width: 480px) {
+  @include breakpoint-max($extraSmallMax) {
     justify-content: center;
     flex-direction: column;
-  };
-
-  @media screen and (min-width: 1200px) {
+  }
+  @include breakpoint-min($large) {
     grid-column-start: 1;
     grid-column-end: 3;
-  };
+  }
 };
 
 .powered {

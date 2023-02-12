@@ -1,22 +1,21 @@
 import refs, { projectsRefs } from '../../common/refs';
-import projectsLib from '../../../lib/projectsLib.JSON';
-
+import { sortedAllProjectByPriority, getCurrentCategory, getFilteredDataByCategory } from '../../components/projects';
 import projectsItemMarkup from '../../templates/projectsItemMarkup';
 import projectsItemModalMarkup from '../../templates/projectsItemModalMarkup';
 import createListMarkup from '../../common/createListMarkup';
 import setCurrentClass from '../../common/setCurrentClass';
+import setBtnDisabled from '../../common/setBtnDisabled';
 import { openModal } from '../../components/modal';
 import { showLoader, hideLoader } from '../../components/loader';
 import { getCurrentPage, getCurrentItemsPerPage, createPaginationBtnListMarkup } from '../../components/pagination';
 // ================================================================================
 // === Початкові параметри
 // ================================================================================
-const allProjects = Object.values(projectsLib).flat();
 const perPage = 6;
 // ================================================================================
 // === Вираховуємо данні для рендеру
 // ================================================================================
-let projectToRender = allProjects;
+let projectToRender = sortedAllProjectByPriority;
 let pages = Math.ceil(projectToRender.length / perPage);
 let currentItemsPerPage = [];
 // ================================================================================
@@ -49,50 +48,39 @@ function renderPagination(pages) {
   refs.pagination.innerHTML = paginationBtnListMarkup;
 }
 
-function getfilteredData(filterQuery) {
-  const filteredData = allProjects.filter(item => item.category === filterQuery);
-  if (filteredData.length < 1) return allProjects;
-  return filteredData;
-}
-
-function getCurrentFilter() {
-  const projectsFilterBtnCurrent = document.querySelector('button.projects__filter-btn.current');
-  const currentFilter = projectsFilterBtnCurrent.dataset.filter;
-  return currentFilter
-}
-
 function onProjectsFilterBtnClick(e) {
   if (e.target.nodeName !== 'BUTTON') return;
+  console.log(e.target);
 
-  setCurrentClass(e, '.projects__filter-btn.current');
-  const filteredData = getfilteredData(e.target.dataset.filter);
+  const filteredData = getFilteredDataByCategory(projectToRender, e.target.dataset.filter);
   const newPages = Math.ceil(filteredData.length / perPage);
 
+  setBtnDisabled(e, '.projects__filter-btn');
+  setCurrentClass(e, '.projects__filter-btn.current');
   renderContent(filteredData);
   renderPagination(newPages);
 }
 
-
 function onProjectDetailsBtnClick(e) {
   if (!e.target.classList.contains('project__details-btn')) return;
-
-  showLoader();
-
+  // showLoader();
   const currentProjectId = e.target.dataset.id;
   const currentProjectData = currentItemsPerPage.find(project => project.id === currentProjectId);
   const currentProjectMarkup = projectsItemModalMarkup(currentProjectData);
-
+  
   refs.modal.innerHTML = currentProjectMarkup;
   openModal();
-  hideLoader();
+  // hideLoader();
 }
 
 function onPagBtnClick(e) {
+  if (e.target.nodeName !== 'BUTTON') return;
   const currentPage = getCurrentPage(e);
-  const filterData = getfilteredData(getCurrentFilter());
-
-  renderContent(filterData, currentPage);
+  const filterData = getFilteredDataByCategory(projectToRender, getCurrentCategory());
+  
+  setBtnDisabled(e, '.paginationBtn');
   setCurrentClass(e, '.paginationBtn.current');
+  renderContent(filterData, currentPage);
 }
 
 // ================================================================================
@@ -100,4 +88,3 @@ function onPagBtnClick(e) {
 // console.log('кількість елементів на сторінці:', perPage);
 // console.log("кількість сторінок:", pages);
 // ================================================================================
-// console.log("renderPagination", "pages", pages);

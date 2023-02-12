@@ -1,12 +1,6 @@
 import refs from "../common/refs";
 
-console.log(refs.modalCloseBtn);
-
 const backdrop = refs.modal.parentElement;
-
-function onModalCloseBtnClick() {
-  closeModal();
-}
 
 function onBackdropClick(e) {
   if (e.currentTarget === e.target) closeModal();
@@ -23,7 +17,7 @@ export function openModal() {
 
   backdrop.addEventListener('click', onBackdropClick);
   window.addEventListener('keydown', onEscKeyPress);
-  refs.modalCloseBtn.addEventListener('click', onModalCloseBtnClick);
+  refs.modalCloseBtn.addEventListener('click', closeModal);
 }
 
 export function closeModal() {
@@ -33,5 +27,5 @@ export function closeModal() {
 
   backdrop.removeEventListener('click', onBackdropClick);
   window.removeEventListener('keydown', onEscKeyPress);
-  refs.modalCloseBtn.removeEventListener('keydown', onModalCloseBtnClick);
+  refs.modalCloseBtn.removeEventListener('click', closeModal);
 }

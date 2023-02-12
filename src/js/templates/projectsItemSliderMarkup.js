@@ -3,8 +3,7 @@ export default function projectsItemSliderMarkup(data) {
 
   return `
     <li class="projects-slider__item">
-      <span>${title}</span>
-      <img class="projects-slider__img" src="./images/projects/${category}/${id}/poster-${id}.webp"alt="${title}" width="420">
+      <img class="projects-slider__img" src="./images/projects/${category}/${id}/poster-${id}.webp" alt="${title}" width="332" height="498">
     </li>
   `;
 }

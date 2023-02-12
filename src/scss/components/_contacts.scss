@@ -9,8 +9,8 @@
     padding: 20px 0;
     border-top: 2px solid rgba($color: #fff, $alpha: 0.3);
     border-bottom: 2px solid rgba($color: #fff, $alpha: 0.3);
-  };
-};
+  }
+}
 
 .contacts__list {
   display: flex;
@@ -23,13 +23,12 @@
     justify-content: space-evenly;
 
     column-gap: 32px;
-  };
-};
+  }
+}
 
 .contacts__item {
-  display: flex;
-  align-items: center;
-};
+  @extend %flex-center-a;
+}
 
 .contacts__link {
   display: inline-flex;
@@ -37,7 +36,7 @@
   gap: 4px;
   padding: 4px;
 
-  border-radius: var(--border__radius);
+  @extend %border-radius;
   transition: background-color var(--transition__hover);
 
   &:hover,
@@ -46,17 +45,17 @@
 
     &.telegram {
       background-color: #0088cc;
-    };
+    }
 
     &.viber {
-      background-color: #59267C;
-    };
+      background-color: #59267c;
+    }
 
     &.whatsapp {
-      background-color: #25D366;
-    };
-  };
-};
+      background-color: #25d366;
+    }
+  }
+}
 
 .contacts__icon {
   width: 20px;
@@ -67,17 +66,16 @@
   .contacts__list--message &--message {
     width: 32px;
     height: 32px;
-  };
-};
+  }
+}
 
 .orline {
-display: flex;
-align-items: center;
-gap: 4px;
+  @extend %flex-center-a;
+  gap: 4px;
 
-font-size: 12px;
-// color: rgba($color: #fff, $alpha: 0.3);
-};
+  font-size: 12px;
+  // color: rgba($color: #fff, $alpha: 0.3);
+}
 
 .line {
   display: block;
@@ -85,4 +83,4 @@ font-size: 12px;
   height: 2px;
 
   background-color: rgba($color: #fff, $alpha: 0.3);
-};
+}

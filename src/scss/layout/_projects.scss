@@ -1,21 +1,17 @@
 .projects__slider {
   min-width: 0;
-};
+}
 
 .projects__filter-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center-ja;
   flex-wrap: wrap;
   gap: 8px;
 
   margin: 24px 0;
-};
+}
 
 .projects__filter-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center-ja;
 
   min-width: 88px;
   padding: 12px;
@@ -23,27 +19,27 @@
   font-size: 16px;
   color: rgba(white, 0.6);
   background-color: rgba(black, 1);
-  border-radius: var(--border__radius);
-  cursor: pointer;
+  @extend %border-radius;
+  @extend %cursor;
 
   &:hover,
   &:focus {
     background-color: var(--color__hover);
-  };
+  }
 
   &.current {
     color: white;
     background-color: var(--color__accent);
-  };
+  }
 
-  @media screen and (min-width: 768px) {
+  @include breakpoint-min($medium) {
     min-width: 100px;
-  };
-};
+  }
+}
 
 .projects__list {
   @extend %cardSet;
-};
+}
 
 .projects__item {
   position: relative;
@@ -60,174 +56,156 @@
   &:focus {
     scale: 1.05;
   }
+}
 
-   @media screen and (max-width: 767px) {
-    &.animate__animated.animate__fadeInUp {
-      &:nth-of-type(n+2) {
-        --animate-duration: 1250ms;
-      }
-      &:nth-of-type(n+3) {
-        --animate-duration: 1500ms;
-      }
-      &:nth-of-type(n+4) {
-        --animate-duration: 1750ms;
-      }
+.projects__item.animate__animated.animate__fadeInUp {
+  @include breakpoint-max($smallMax) {
+    &:nth-of-type(n + 2) {
+      --animate-duration: 1250ms;
     }
-   }
-
-  @media screen and (max-width: 1199px) {
-    &.animate__animated.animate__fadeInUp {
-      &:nth-of-type(n+3) {
-        --animate-duration: 1250ms;
-      }
-      &:nth-of-type(n+5) {
-        --animate-duration: 1500ms;
-      }
-      &:nth-of-type(n+7) {
-        --animate-duration: 1750ms;
-      }
-      &:nth-of-type(n+9) {
-        --animate-duration: 2000ms;
-      }
+    &:nth-of-type(n + 3) {
+      --animate-duration: 1500ms;
+    }
+    &:nth-of-type(n + 4) {
+      --animate-duration: 1750ms;
     }
   }
-
-  @media screen and (min-width: 1200px) {
-    &.animate__animated.animate__fadeInUp {
-      &:nth-of-type(n+4) {
-        --animate-duration: 1250ms;
-      }
-
-      &:nth-of-type(n+7) {
-        --animate-duration: 1500ms;
-      }
-
-      &:nth-of-type(n+10) {
-        --animate-duration: 2000ms;
-      }
+  @include breakpoint-max($mediumMax) {
+    &:nth-of-type(n + 3) {
+      --animate-duration: 1250ms;
+    }
+    &:nth-of-type(n + 5) {
+      --animate-duration: 1500ms;
+    }
+    &:nth-of-type(n + 7) {
+      --animate-duration: 1750ms;
+    }
+    &:nth-of-type(n + 9) {
+      --animate-duration: 2000ms;
     }
   }
-};
+  @include breakpoint-min($large) {
+    &:nth-of-type(n + 4) {
+      --animate-duration: 1250ms;
+    }
+    &:nth-of-type(n + 7) {
+      --animate-duration: 1500ms;
+    }
+    &:nth-of-type(n + 10) {
+      --animate-duration: 2000ms;
+    }
+  }
+}
 
 .project__desc {
-  @extend %flex;
+  @extend %flex-center-a;
   flex-grow: 1;
   padding: 4px 12px;
 
   background-color: black;
-  border-bottom-left-radius: var(--border__radius);
-  border-bottom-right-radius: var(--border__radius);
-  // overflow: hidden;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
 }
 
 .project__title {
   width: 100%;
 
   color: white;
- 
-  @media screen and (min-width: 768px) {
+
+  @include breakpoint-min($medium) {
     font-size: 16px;
-  };
-  
-  @media screen and (min-width: 1200px) {
+  }
+  @include breakpoint-min($large) {
     font-size: 18px;
-  };
-};
+  }
+}
 
 .projects__play-svg {
   display: block;
 
-  color: #FF0000;
+  color: #ff0000;
   fill: currentColor;
-};
+}
 
 .project__category {
-  position: absolute;
+  @extend %absolute;
   top: 0;
   right: 0;
-
   padding: 8px;
 
   font-size: 12px;
   color: white;
-  
+
   background-color: rgba($color: black, $alpha: 0.85);
-  border-bottom-left-radius: var(--border__radius);
-  border-top-right-radius: var(--border__radius);
+  border-bottom-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
   overflow: hidden;
 
-  @media screen and (min-width: 1200px) {
+  @include breakpoint-min($large) {
     padding: 10px;
     font-size: 14px;
-  };
-};
+  }
+}
 
 .projects__img-cover {
   width: 100%;
   height: calc(50vw);
   object-fit: cover;
 
-  border-top-left-radius: var(--border__radius);
-  border-top-right-radius: var(--border__radius);
-  cursor: pointer;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  @extend %cursor;
 
-  @media screen and (min-width: 480px) {
+  @include breakpoint-min($small) {
     height: 252px;
-  };
-
-  @media screen and (min-width: 768px) {
+  }
+  @include breakpoint-min($medium) {
     height: 192px;
-  };
-
-  @media screen and (min-width: 1200px) {
+  }
+  @include breakpoint-min($large) {
     height: 204px;
-  };
-};
+  }
+}
 
 .projects__play-iframe {
   width: 400px;
   height: 225px;
 
-  @media screen and (min-width: 768px) {
+  @include breakpoint-min($medium) {
     width: 720px;
     height: 405px;
-  };
-
-  @media screen and (min-width: 1200px) {
+  }
+  @include breakpoint-min($large) {
     width: 960px;
     height: 840px;
-  };
-};
+  }
+}
 
 .project__details-btn {
-  position: absolute;
+  @extend %absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 
   background-color: transparent;
-  cursor: pointer;
+  @extend %cursor;
 }
 
 .projects__iframe {
   width: 100%;
   min-height: 336px;
 
-  @media screen and (min-width: 480px) {
+  @include breakpoint-min($small) {
     height: 336px;
-  };
-
-  @media screen and (min-width: 768px) {
-    height: 528px
-  };
-
-  @media screen and (min-width: 1200px) {
+  }
+  @include breakpoint-min($medium) {
+    height: 528px;
+  }
+  @include breakpoint-min($large) {
     height: 852px;
-  };
-
-   @media (orientation: landscape) {
-    min-height: 90vh;
-    height: 90vh;
+  }
+  @media (orientation: landscape) {
+    max-height: 80vh;
   }
 }
