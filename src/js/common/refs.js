@@ -15,7 +15,8 @@ const refs = {
 export default refs;
 
 export const projectsRefs = {
+  projectSection: document.querySelector('div#projects'),
   projectList: document.querySelector('ul.projects__list'),
   projectsFilterList: document.querySelector('ul.projects__filter-list'),
-  projectSliderList: document.querySelector('ul.projects-slider'),
+  projectSliderList: document.querySelector('.projects-slider'),
 };

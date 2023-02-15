@@ -16,6 +16,12 @@
   }
 }
 
+@mixin breakpoint-min-width-height($bp1, $bp2) {
+  @media (min-width: $bp1) and (min-height: $bp2) {
+    @content;
+  }
+}
+
 // ==================================================
 // @include breakpoint-min($small) {aaa}
 // @include breakpoint-min($medium) {aaa}

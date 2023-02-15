@@ -11,7 +11,7 @@ import { getCurrentPage, getCurrentItemsPerPage, createPaginationBtnListMarkup }
 // ================================================================================
 // === Початкові параметри
 // ================================================================================
-const perPage = 6;
+const perPage = window.innerWidth < 768 ? 6 : window.innerWidth < 1200 ? 8 : 12;
 // ================================================================================
 // === Вираховуємо данні для рендеру
 // ================================================================================
@@ -50,7 +50,6 @@ function renderPagination(pages) {
 
 function onProjectsFilterBtnClick(e) {
   if (e.target.nodeName !== 'BUTTON') return;
-  console.log(e.target);
 
   const filteredData = getFilteredDataByCategory(projectToRender, e.target.dataset.filter);
   const newPages = Math.ceil(filteredData.length / perPage);
@@ -81,6 +80,7 @@ function onPagBtnClick(e) {
   setBtnDisabled(e, '.paginationBtn');
   setCurrentClass(e, '.paginationBtn.current');
   renderContent(filterData, currentPage);
+  projectsRefs.projectSection.scrollIntoView(true);
 }
 
 // ================================================================================

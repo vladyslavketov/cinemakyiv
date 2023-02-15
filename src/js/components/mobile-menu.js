@@ -2,11 +2,9 @@ import refs from '../common/refs';
 
 refs.menuBtnRef.addEventListener('click', toggleClassIsOpen);
 refs.menuNavListRef.addEventListener('click', checkNodeName);
-// window.addEventListener("orientationchange", removeClassIsOpen);
 
 function toggleClassIsOpen() {
-  const expanded =
-    refs.menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+  const expanded = refs.menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
 
   refs.menuBtnRef.classList.toggle('isOpen');
   refs.menuBtnRef.setAttribute('aria-expanded', !expanded);
@@ -16,8 +14,7 @@ function toggleClassIsOpen() {
 }
 
 function removeClassIsOpen() {
-  const expanded =
-    refs.menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+  const expanded = refs.menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
 
   refs.menuBtnRef.classList.remove('isOpen');
   refs.menuBtnRef.setAttribute('aria-expanded', !expanded);

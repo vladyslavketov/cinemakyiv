@@ -17,7 +17,7 @@
     height: 40px;
   }
 
-  @include breakpoint-min($large) {
+  @include breakpoint-min($medium) {
     display: none;
   }
 }
@@ -65,8 +65,7 @@
   bottom: 0;
   right: 0;
 
-  display: flex;
-  flex-direction: column;
+  @extend %flex-dir-column;
   padding: 28px 16px;
 
   color: white;

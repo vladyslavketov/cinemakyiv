@@ -1,63 +1,56 @@
-// mobile-menu nav
-.mobile-menu {
-  & .nav {
+.nav {
+  .header & {
+    margin-left: auto;
+
+    @include breakpoint-max($smallMax) {display: none;}
+  }
+
+  .mobile-menu & {
     padding-bottom: 28px;
-  }
-
-  & .nav__list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  & .nav__link {
-    @extend %flex-center-a;
-    max-width: 200px;
-    padding: 12px;
-
-    font-size: 20px;
-    font-weight: 600;
-    @extend %border-radius;
-    border: 1px solid white;
-
-    &:hover,
-    &:focus {
-      border: 1px solid transparent;
-      background-color: var(--color__accent);
-      outline: none;
-    }
   }
 }
 
-.header {
-  & .nav {
-    margin-left: auto;
-
-    @include breakpoint-max($mediumMax) {display: none;}
-  }
-
-  & .nav__list {
+.nav__list {
+  .header & {
     @extend %flex-center-a;
     gap: 16px;
     height: $height-header;
     margin-left: auto;
   }
 
-  &.isScrolling .nav__list {
-    height: 44px;
+  .mobile-menu & {
+    @extend %flex-dir-column;
+    gap: 16px;
+  }
+}
+
+.nav__link {
+  font-size: 20px;
+  font-weight: 600;
+  @extend %border-radius;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color__accent);
+    outline: none;
   }
 
-  & .nav__link {
-    padding: 4px;
+  .header & {
+    padding: 4px 8px;
 
-    font-size: 20px;
     line-height: 1.2;
+  }
 
-    @extend %border-radius;
+  .mobile-menu & {
+    @extend %flex-center-a;
+    max-width: 200px;
+    padding: 12px;
+
+    border: 1px solid white;
 
     &:hover,
     &:focus {
-      background-color: var(--color__accent);
+      border: 1px solid transparent;
     }
   }
 }

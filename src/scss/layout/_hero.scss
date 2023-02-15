@@ -9,7 +9,10 @@
   background-position: center;
   background-attachment: fixed;
 
-  @include breakpoint-min($medium) {width: 100vw; height: 100vh;}
+  @media (min-width: $medium) and (min-height: 620px) {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 .hero__container {
@@ -63,14 +66,20 @@
   font-weight: 700;
   font-size: 32px;
 
-  @include breakpoint-min($medium) {margin-bottom: 24px;}
-  @include breakpoint-min($large) {font-size: 48px;}
+  @include breakpoint-min($medium) {
+    margin-bottom: 24px;
+  }
+  @include breakpoint-min($large) {
+    font-size: 48px;
+  }
 }
 
 .hero__subtitle {
   font-size: 24px;
 
-  @include breakpoint-min($large) {font-size: 32px;}
+  @include breakpoint-min($large) {
+    font-size: 32px;
+  }
 }
 
 .hero__desc {
@@ -81,20 +90,21 @@
   }
 
   text-align: start;
-  font-size: 16px;
   line-height: 1.5;
-
+  
   @include breakpoint-min($large) {
     max-width: 880px;
 
     font-size: 20px;
   }
 
-  @include breakpoint-min(1600px) {font-size: 24px;}
+  @include breakpoint-min(1600px) {
+    font-size: 24px;
+  }
 }
 
 .hero__desc .accent {
-  padding: 0 8px;
+  padding: 0 12px;
 
   color: black;
 

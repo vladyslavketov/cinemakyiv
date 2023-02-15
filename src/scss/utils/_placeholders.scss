@@ -25,6 +25,11 @@
   justify-content: center;
 }
 
+%flex-dir-column {
+  display: flex;
+  flex-direction: column;
+}
+
 %cursor {
   cursor: pointer;
 }
@@ -35,4 +40,12 @@
 
 %absolute {
   position: absolute;
+}
+
+%currentColor {
+  fill: currentColor;
+}
+
+%font-size-16 {
+  font-size: 16px;
 }

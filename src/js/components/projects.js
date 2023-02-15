@@ -15,3 +15,17 @@ export function getFilteredDataByCategory(data, filterQuery) {
   if (filteredData.length < 1) return data; // TODO - прибрати умови і перенести у місце використання
   return filteredData;
 }
+
+// template
+// {
+//   "id": "temp",
+//   "title": "temp",
+//   "youtubeKeys": ["temp"],
+//   "img": ["temp", "temp"],
+//   "category": "temp",
+//   "year": "",
+//   "tag": [],
+//   "priority": 0,
+//   "selections": [],
+//   "newKey": null
+// }

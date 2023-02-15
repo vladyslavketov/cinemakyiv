@@ -5,14 +5,14 @@
         <include src="./html/components/logo.html"></include>
       <ul class="sm__list">
         <li class="sm__item">
-          <a href="https://www.instagram.com/cinemakyiv/" class="sm__link instagram" target="_blank">
+          <a href="https://www.instagram.com/cinemakyiv/" class="sm__link instagram" target="_blank" aria-label="open our page in Instagram">
             <svg class="sm__icon" width="24" height="24">
               <use href="../static/images/icons/icons.svg#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="sm__item">
-          <a href="https://www.facebook.com/cinemakyiv/" class="sm__link facebook" target="_blank">
+          <a href="https://www.facebook.com/cinemakyiv/" class="sm__link facebook" target="_blank" aria-label="open our page in Facebook">
             <svg class="sm__icon" width="24" height="24">
               <use href="../static/images/icons/icons.svg#facebook"></use>
             </svg>
@@ -21,61 +21,10 @@
       </ul>
       </div>
       <div class="footer__content">
-      <div class="footer-box contacts">
-      <h2 class="footer-box__title">Контакти</h2>
-      <strong class="contacts__cta">Зателефонуйте нам</strong>
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <a class="contacts__link" href="tel:+380983963158">
-            <svg class="contacts__icon whatsapp" width="16" height="16">
-              <use href="../static/images/icons/icons.svg#phone-solid"></use>
-            </svg>
-            +38 (098) 396 31 58
-          </a>
-        </li>
-        <li class="contacts__item">
-          <a class="contacts__link" href="tel:+380965789277">
-            <svg class="contacts__icon whatsapp" width="16" height="16">
-              <use href="../static/images/icons/icons.svg#phone-solid"></use>
-            </svg>
-            +38 (096) 578 92 77
-          </a>
-        </li>
-      </ul>
-      <p class="orline"><span class="line"></span>або<span class="line"></span></p>
-      <strong class="contacts__cta">Напишіть нам</strong>
-      <ul class="contacts__list contacts__list--message">
-        <li class="contacts__item">
-          <a class="contacts__link" href="mailto:cinemakyiv@gmail.com" target="_blank">
-            <svg class="contacts__icon email" width="16" height="16">
-              <use href="../static/images/icons/icons.svg#envelope-solid"></use>
-            </svg>
-            cinemakyiv@gmail.com
-          </a>
-        </li>
-        <li class="contacts__item">
-          <a href="https://t.me/IgorKozakCinema" class="contacts__link telegram" target="_blank">
-            <svg class="contacts__icon contacts__icon--message telegram" width="16" height="16">
-              <use href="../static/images/icons/icons.svg#telegram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="contacts__item">
-          <a href="viber://chat?number=380983963158" class="contacts__link viber" target="_blank">
-            <svg class="contacts__icon contacts__icon--message viber" width="16" height="16">
-              <use href="../static/images/icons/icons.svg#viber"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="contacts__item">
-          <a href="https://wa.me/380983963158" class="contacts__link whatsapp" target="_blank">
-            <svg class="contacts__icon contacts__icon--message whatsapp" width="16" height="16">
-              <use href="../static/images/icons/icons.svg#whatsapp"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      </div>
+        <div class="footer-box contacts">
+          <h2 class="footer-box__title">Контакти</h2>
+          <include src="./html/components/contacts.html"></include>
+        </div>
       </div>
     </div>
     <div class="footer__bottom">

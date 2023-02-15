@@ -26,7 +26,7 @@
   width: 10px;
   height: 10px;
 
-  font-size: 0;
+  font-size: 0px;
 
   background-color: #fff;
   border-radius: 50%;
@@ -58,7 +58,7 @@
 }
 
 .slick-arrow__icon {
-  fill: currentColor;
+  @extend %currentColor;
 }
 
 .projects-slider__item {

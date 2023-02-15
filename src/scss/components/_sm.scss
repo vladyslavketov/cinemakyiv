@@ -27,6 +27,6 @@
   width: 24px;
   height: 24px;
 
-  // fill: currentColor;
+  // @extend %currentColor;
   fill: rgba($color: white, $alpha: 0.1);
 }

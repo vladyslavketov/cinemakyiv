@@ -11,30 +11,9 @@
 }
 
 .projects__filter-btn {
-  @extend %flex-center-ja;
-
-  min-width: 88px;
-  padding: 12px;
-
-  font-size: 16px;
-  color: rgba(white, 0.6);
-  background-color: rgba(black, 1);
-  @extend %border-radius;
-  @extend %cursor;
-
-  &:hover,
-  &:focus {
-    background-color: var(--color__hover);
-  }
-
-  &.current {
-    color: white;
-    background-color: var(--color__accent);
-  }
-
-  @include breakpoint-min($medium) {
-    min-width: 100px;
-  }
+  @extend .btn;
+  width: 88px;
+  height: 42px;
 }
 
 .projects__list {
@@ -43,11 +22,12 @@
 
 .projects__item {
   position: relative;
+
   @extend %cardSet__item;
+  @extend %flex-dir-column;
 
-  display: flex;
-  flex-direction: column;
-
+  @extend %border-radius;
+  background: #000;
   overflow: hidden;
   transition: scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
   scale: 1;
@@ -100,60 +80,44 @@
 .project__desc {
   @extend %flex-center-a;
   flex-grow: 1;
-  padding: 4px 12px;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px 12px 12px;
+
+  color: white;
 
   background-color: black;
   border-bottom-left-radius: $border-radius;
   border-bottom-right-radius: $border-radius;
-}
 
-.project__title {
-  width: 100%;
-
-  color: white;
-
-  @include breakpoint-min($medium) {
-    font-size: 16px;
-  }
   @include breakpoint-min($large) {
     font-size: 18px;
   }
 }
 
-.projects__play-svg {
-  display: block;
-
-  color: #ff0000;
-  fill: currentColor;
+.project__desc  {
+  .modal__body & {
+    padding: 12px 20px;
+  }
 }
 
-.project__category {
-  @extend %absolute;
-  top: 0;
-  right: 0;
-  padding: 8px;
+.project__title,.project__category {
+  flex-basis: calc(100% - 44px);
+}
+.project__year {
+  width: 40px;
+}
 
-  font-size: 12px;
-  color: white;
-
-  background-color: rgba($color: black, $alpha: 0.85);
-  border-bottom-left-radius: $border-radius;
-  border-top-right-radius: $border-radius;
-  overflow: hidden;
-
-  @include breakpoint-min($large) {
-    padding: 10px;
-    font-size: 14px;
-  }
+.projects__play-svg {
+  color: #ff0000;
+  @extend %currentColor;
 }
 
 .projects__img-cover {
   width: 100%;
   height: calc(50vw);
   object-fit: cover;
-
-  border-top-left-radius: $border-radius;
-  border-top-right-radius: $border-radius;
+  
   @extend %cursor;
 
   @include breakpoint-min($small) {
@@ -188,13 +152,16 @@
   right: 0;
   bottom: 0;
 
-  background-color: transparent;
   @extend %cursor;
+  background-color: transparent;
 }
 
 .projects__iframe {
   width: 100%;
   min-height: 336px;
+
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius; 
 
   @include breakpoint-min($small) {
     height: 336px;

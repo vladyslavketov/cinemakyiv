@@ -17,11 +17,13 @@
   @extend %cardSet;
   gap: 24px;
 
-  @include breakpoint-min($medium) { 
+  @include breakpoint-min($medium) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  @include breakpoint-min($large) {grid-template-columns: 1fr 1fr 1fr;}
+  @include breakpoint-min($large) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .benefits__item {
@@ -33,7 +35,7 @@
 
   background-color: white;
   @extend %border-radius;
-  
+
   @include breakpoint-min-max($medium, $mediumMax) {
     &:nth-child(2) {
       grid-column-start: 1;
@@ -60,11 +62,15 @@
   object-fit: cover;
   @extend %border-radius;
 
-  @include breakpoint-max($smallMax) {width: 100%;}
+  @include breakpoint-max($smallMax) {
+    width: 100%;
+  }
 }
 
 .benefits__desc {
   padding: 4px;
+
+  font-size: 14px;
 }
 
 .benefits__label {

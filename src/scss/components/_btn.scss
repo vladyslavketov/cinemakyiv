@@ -1,27 +1,38 @@
-.btn-up {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-
+.btn {
   @extend %flex-center-ja;
 
-  width: 48px;
-  height: 48px;
-
+  font-size: inherit;
   color: white;
-  background-color: rgba($color: black, $alpha: 0.6);
-  border-radius: 50%;
-  border: 1px solid rgba($color: white, $alpha: 0.4);
 
+  background-color: black;
+  @extend %border-radius;
   @extend %cursor;
-  opacity: 1;
-  pointer-events: all;
-
+  
   &:hover,
   &:focus {
-    background-color: var(--color__accent);
+    background-color: var(--color__hover);
   }
 
+  &.current {
+    background-color: var(--color__accent);
+  }
+}
+
+.btn-up {
+  @extend .btn;
+
+  position: fixed;
+  bottom: $padding-medium;
+  right: $padding-medium;
+
+  width: $padding-small * 3;
+  height: $padding-small * 3;
+
+  background-color: rgba($color: black, $alpha: 0.6);
+  border: 1px solid rgba($color: white, $alpha: 0.4);
+  border-radius: 50%;
+  transition: opacity var(--transition__main);
+  
   &.isHidden {
     opacity: 0;
     pointer-events: none;
@@ -29,7 +40,8 @@
 }
 
 .btn-up__icon {
+  @extend %currentColor;
+
   width: 36px;
   height: 36px;
-  fill: currentColor;
 }

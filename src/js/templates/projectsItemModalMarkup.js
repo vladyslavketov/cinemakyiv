@@ -1,27 +1,27 @@
 export default function projectsItemModalMarkup(data) {
-  const { category, title, youtubeKeys } = data;
+  const { category, title, youtubeKeys, year } = data;
   const url = `"https://www.youtube.com/embed/${youtubeKeys[0]}"`;
-  let nameOfCategory = 0;
+  let categoryName = 0;
 
   switch (category) {
     case 'films':
-      nameOfCategory = 'Фільм';
+      categoryName = 'Фільм';
       break;
 
     case 'serials':
-      nameOfCategory = 'Серіал';
+      categoryName = 'Серіал';
       break;
 
     case 'clips':
-      nameOfCategory = 'Кліп';
+      categoryName = 'Кліп';
       break;
 
     case 'adv':
-      nameOfCategory = 'Реклама';
+      categoryName = 'Реклама';
       break;
 
     default:
-      nameOfCategory = 'Проект';
+      categoryName = 'Проект';
   }
 
   return `
@@ -34,11 +34,13 @@ export default function projectsItemModalMarkup(data) {
           allowfullscreen
         ></iframe>
       </div>
-      <div class="projects__modal-dec">
+      <div class="project__desc">
         <p class="project__title">${title}</p>
+        <p class="project__year">${year}</p>
+        <p class="project__category">${categoryName}</p>
       </div>
     </div>
   `;
 }
 
-{/* <p class="project__category">${nameOfCategory}</p> */}
+{/* <p class="project__category">${categoryName}</p> */}

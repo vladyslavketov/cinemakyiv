@@ -1,37 +1,40 @@
 export default function projectsItemMarkup(data) {
   if (!data) return;
-  const { id, title, category } = data;
-  // const src = `./images/projects/${category}/${id}/cover-${id}.webp`;
 
-  let nameOfCategory = 0;
+  const { id, title, category, year } = data;
+  const src = data.img.includes('cover')
+    ? `./images/projects/${category}/${id}/cover-${id}.webp`
+    : `./images/poster-1620x1080.webp`;
+  let categoryName = 0;
+
+  // onerror="this.src='images/blankPic.jpg'"
 
   switch (category) {
     case 'films':
-      nameOfCategory = 'Фільм';
+      categoryName = 'Фільм';
       break;
 
     case 'serials':
-      nameOfCategory = 'Серіал';
+      categoryName = 'Серіал';
       break;
 
     case 'clips':
-      nameOfCategory = 'Кліп';
+      categoryName = 'Кліп';
       break;
 
     case 'adv':
-      nameOfCategory = 'Реклама';
+      categoryName = 'Реклама';
       break;
 
     default:
-      nameOfCategory = 'Проект';
+      categoryName = 'Проект';
   }
 
   return `
     <li class="projects__item animate__animated animate__fadeInUp" data-filter=${category}>
         <img
           class="projects__img-cover"
-          src="./images/projects/${category}/${id}/cover-${id}.webp",
-          
+          src=${src}
           alt=${title}
           width="320"
           height="280"
@@ -41,27 +44,10 @@ export default function projectsItemMarkup(data) {
           <svg class="projects__play-svg" width="40" height="40">
             <use href="./images/icons/icons.svg#youtube-2"></use>
           </svg>
+          <p class="project__category">${categoryName}</p>
+          <p class="project__year">${year}</p>
         </div>
-        <p class="project__category">${nameOfCategory}</p>
-        <button type="button" class="project__details-btn" data-id=${id}></button>
+        <button type="button" class="project__details-btn" data-id=${id} aria-label="to open project details"></button>
     </li>
   `;
 }
-
-// onerror="this.src='images/blankPic.jpg'"
-
-// src = './images/projects/${category}/${id}/cover.webp';
-// data-lazy="./images/projects/${category}/${id}/cover.webp"
-
-
-// === інший синтаксис ===
-  // if (category === 'films') {
-  //   nameOfCategory = 'Фільм';
-  // } else if (category === 'serials') {
-  //   nameOfCategory = 'Серіал';
-  // } else if (category === 'clips') {
-  //   nameOfCategory = 'Кліп';
-  // } else if (category === 'adv') {
-  //   nameOfCategory = 'Реклама';
-  // } else {nameOfCategory = 'Проект';}
-  // ===  ===

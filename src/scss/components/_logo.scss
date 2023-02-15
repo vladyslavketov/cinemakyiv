@@ -4,11 +4,7 @@
   height: $height-header;
   gap: 4px;
 
-  transform: height var(--transition__main);
-
-  // .header.isScrolling & {
-  //   height: 44px;
-  // };
+  font-weight: 700;
 
   &::before {
     content: 'casting agency';
@@ -17,10 +13,8 @@
     bottom: -10px;
     display: block;
 
-    font-size: 16px;
-
     opacity: 1;
-    transform: opacity var(--transition__main);
+    transition: opacity var(--transition__main);
 
     .header.isScrolling & {
       opacity: 0;
@@ -30,10 +24,9 @@
 
 .logo__icon,
 .logo__text {
-  fill: currentColor;
+  @extend %currentColor;
 }
 
 .logo__text {
-  font-weight: 700;
   font-size: 24px;
 }

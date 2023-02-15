@@ -7,8 +7,7 @@
   height: $height-header;
 
   color: white;
-  transition: background-color var(--transition__main),
-    min-height var(--transition__main);
+  transition: background-color var(--transition__main);
   z-index: 2000;
 
   body.mobileMenuIsOpen &,

@@ -3,13 +3,12 @@
   flex-wrap: wrap;
   gap: 8px;
 
-  padding: 16px 0;
+  padding: $padding-small;
   z-index: 1;
 }
 
 .paginationBtn {
-  @extend .projects__filter-btn;
-  min-width: 40px;
-  // width: 40px;
-  padding: 8px;
+  @extend .btn;
+  width: 40px;
+  height: 35px;
 }
