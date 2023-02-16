@@ -1,4 +1,5 @@
 import projectsLib from '../../lib/projectsLib.JSON';
+// import projectsLib from '../../../static/lib/projectsLib.JSON';
 
 export const allProjects = Object.values(projectsLib).flat();
 export const sortedAllProjectByPriority = [...allProjects].sort(
