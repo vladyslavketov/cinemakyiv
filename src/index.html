@@ -5,27 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кастинг-агентство Cinema Kyiv. Кастинг у реклами, кліпи, кіно, серіали. Cinema Kyiv Agancy</title>
-    <include src="./html/components/typography.html"/></include>
-    <include src="./html/components/favicon.html"/></include>
+    <include src="./components/typography/typography.html"/></include>
+    <include src="./favicon/favicon.html"/></include>
     <!-- підключаємо таблицю стилів -->
-    <link rel="stylesheet" href="./scss/pages/home.scss" />
+    <link rel="stylesheet" href="./pages/home/home.scss" />
   </head>
   <body class="isLoading">
-    <include src="./pages/home/html/header.html"/></include>
+    <include src="./pages/home/header.html"/></include>
     <main>
-      <include src="./pages/home/html/section-hero.html"></include>
+      <include src="./pages/home/hero/hero.html"></include>
       <div class="section-wrap" id="projects">
-        <include src="./pages/home/html/section-projects.html"></include>
+        <include src="./layouts/sections/projects/projects.html"></include>
       </div>
-      <include src="./pages/home/html/section-benefits.html"></include>
+      <include src="./layouts/sections/benefits/benefits.html"></include>
     </main>
-    <include src="./html/layouts/footer.html"></include>
+     <include src="./layouts/footer/footer.html"></include>
     <!-- підключаємо доп компоненти -->
-    <include src="./html/components/loader.html"></include>
-    <include src="./html/components/modal.html"></include>
-    <include src="./html/components/btn-up.html"></include>
-    <include src="./html/components/mobile-menu.html"></include>
+    <include src="./components/loader/loader.html"></include>
+    <include src="./components/modal/modal.html"></include>
+    <include src="./components/btns/btn-up.html"></include>
+    <include src="./components/mobile-menu/mobile-menu.html"></include>
     <!-- підключаємо скрипти для роботи -->
-    <script defer type="module" src="./js/pages/home/home.js"></script>
+    <script defer type="module" src="./pages/home/home.js"></script>
   </body>
 </html>

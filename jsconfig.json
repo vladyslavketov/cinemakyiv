@@ -28,3 +28,17 @@
 //     }
 //   }
 // }
+
+
+// =========
+// {
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "paths": {
+//       "@common/*": ["src/common/*"],
+//       "@components/*": ["src/components/*"]
+//     }
+//   },
+//   "include": ["src/**/*.js"],
+//   "exclude": ["node_modules", "**/node_modules", "dist"]
+// }

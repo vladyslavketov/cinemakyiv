@@ -6,5 +6,10 @@
     "...",
     "parcel-reporter-clean-dist",
     "parcel-reporter-static-files-copy"
-  ]
+  ],
+  "transformers": {
+    "*.json": [
+      "@parcel/transformer-raw"
+    ]
+  }
 }

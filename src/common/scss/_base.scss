@@ -1,0 +1,17 @@
+@import './var';
+@import './reset';
+
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/visually-hidden';
+@import './common';
+
+@import '../../components/logo/logo';
+@import '../../components/btns/btn';
+@import '../../components/nav/nav';
+@import '../../components/contacts/contacts';
+@import '../../components/contacts/sm';
+
+@import '../../components/modal/backdrop';
+@import '../../components/modal/modal';
+@import '../../components/loader/loader';
