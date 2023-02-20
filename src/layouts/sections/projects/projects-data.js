@@ -4,7 +4,7 @@
 export const projectDataPromise = fetchProjectsData().then(getProjectsToRender);
 
 async function fetchProjectsData() {
-  const response = await fetch('../../../lib/projectsLib.JSON');
+  const response = await fetch('../../../cinemakyiv/lib/projectsLib.JSON');
   return response.json(); 
 }
 
